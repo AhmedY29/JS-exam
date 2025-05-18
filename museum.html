@@ -14,7 +14,7 @@
     <!-- Style.css -->
     <link rel="stylesheet" href="style.css" />
     <!-- == Style.css == -->
-    <title>JS - EXAM</title>
+    <title>JS - EXAM - Museum</title>
   </head>
   <body>
     <!-- Nav -->
@@ -83,33 +83,33 @@
       </div>
     </nav>
     <!-- == Nav == -->
+
     <!-- Content -->
-    <section style="height: 60vh" class="hero-section container py-4 mt-5">
+    <section class="container">
       <div
-        class="hero-content d-flex justify-content-center flex-column bg-primary text-center p-3 rounded-2 h-100"
+        id="museum"
+        class="countries d-flex gap-4 justify-content-center flex-wrap my-5"
       >
-        <div class="hero-text text-white">
-          <h1>Welcome to our page</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo soluta
-            fuga ab odit
-          </p>
-        </div>
-        <div>
-          <button onclick="handleCheckLoginCountries()" class="btn btn-primary">
-            Explore Countries
-          </button>
-          <button
-            onclick="handleCheckLoginMuseum()"
-            id="museum-btn"
-            class="btn btn-outline-primary"
-          >
-            Explore Museum
-          </button>
+        <div class="country bg-white rounded-2 shadow-sm p-3">
+          <div class="country-title"></div>
+          <img
+            src="https://ids.lib.harvard.edu/ids/view/20462232"
+            alt="country-img"
+            width="200"
+            class="rounded-2"
+          />
+          <div class="country-info mt-1">
+            <h6>Name</h6>
+            <div class="d-flex justify-content-between">
+              <h6>Author</h6>
+              <h6>date</h6>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- == Content == -->
+
     <!-- Bootstrap Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
@@ -117,11 +117,8 @@
       crossorigin="anonymous"
     ></script>
     <!-- == Bootstrap Script == -->
-    <!-- Sweet Alert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- == Sweet Alert == -->
     <!-- Main.js -->
-    <script src="main.js"></script>
+    <script src="museum.js"></script>
     <!-- == Main.js == -->
   </body>
 </html>

@@ -1,0 +1,39 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,.body-form{
+    background-color: #f4f4f4;
+}
+
+
+.hero-section .hero-content{
+    background-image: url('https://images.pexels.com/photos/1310110/pexels-photo-1310110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.container .countries .country{
+    width: 15rem;
+    transition: 0.4s;
+}
+.container .countries .country:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.body-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    width: 25rem;
+}
